@@ -35,7 +35,7 @@ test("creates a valid task", () => {
   const task = createTask("Learn CI/CD");
 
   expect(task.title).toBe("Learn CI/CD");
-  expect(task.completed).toBe(false);
+  epect(task.completed).toBe(false);
 });
 
 test("throws error for empty task title", () => {
