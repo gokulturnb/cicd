@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="app-container">
+    <section class="hero-card">
+      <p class="tagline">GitHub Actions Demo App</p>
+      <h1>TaskFlow</h1>
+      <p class="subtitle">
+        A simple task tracker built for learning CI/CD with GitHub Actions.
+      </p>
+
+      <div class="input-row">
+        <input id="taskInput" type="text" placeholder="Enter a new task..." />
+        <button id="addBtn">Add Task</button>
+      </div>
+
+      <div class="stats">
+        <div>
+          <span id="totalTasks">0</span>
+          <p>Total Tasks</p>
+        </div>
+        <div>
+          <span id="completedTasks">0</span>
+          <p>Completed</p>
+        </div>
+        <div>
+          <span id="progressText">0%</span>
+          <p>Progress</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="task-card">
+      <h2>Today's Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
