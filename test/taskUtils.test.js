@@ -38,6 +38,6 @@ test("creates a valid task", () => {
   expect(task.completed).toBe(false);
 });
 
-test("throws error for empty task title", () => {
+tst("throws error for empty task title", () => {
   expect(() => createTask("")).toThrow("Task title cannot be empty");
 });
